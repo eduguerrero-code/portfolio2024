@@ -386,7 +386,7 @@
                           var i = { ns: e, scroll: { x: window.scrollX, y: window.scrollY }, url: t };
                           this.h.push(i), (this.v = 0);
                           var n = { from: this.l, index: 0, states: [].concat(this.h) };
-                          window.history && window.history.replaceState(n, "", t);
+                         // window.history && window.history.replaceState(n, "", t);
                       }),
                       (n.change = function (t, e, i) {
                           if (i && i.state) {
@@ -404,10 +404,10 @@
                           var o = { from: this.l, index: i, states: [].concat(this.h) };
                           switch (n) {
                               case "push":
-                                  window.history && window.history.pushState(o, "", t);
+                                 // window.history && window.history.pushState(o, "", t);
                                   break;
                               case "replace":
-                                  window.history && window.history.replaceState(o, "", t);
+                                 // window.history && window.history.replaceState(o, "", t);
                           }
                       }),
                       (n.update = function (t, e) {
@@ -730,7 +730,7 @@
                   );
               })(Y),
               X = function () {
-                  return !window.history.pushState;
+                 // return !window.history.pushState;
               },
               V = function (t) {
                   return !t.el || !t.href;
