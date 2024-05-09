@@ -1,1 +1,204 @@
 
+
+
+.containeredufirst {
+    padding-top: 15%;
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;  
+  }
+
+.containeredu {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;  
+  }
+  
+  h2 {
+    font-family: Arial, sans-serif;
+    color: #1217a5;
+    font-size: 16px;
+  }
+
+  .column1 {
+    flex: 1;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: 120px;
+    flex: 0 0 50%; /* 60% width */
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border: 1px black;
+  }
+
+  .column2 {
+    display: flex;
+    padding-left: 60px;
+    padding-top: 180px;
+    padding-right: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 5rem;
+    color: #4a4a4a;
+    text-align: left;
+
+  }
+
+  .column21 {
+    padding-left: 60px;
+    padding-top: 180px;
+    padding-right: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 5rem;
+    color: #4a4a4a;
+    text-align: left;
+
+  }
+
+
+  /* Center the button horizontally and vertically within its container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+
+  }
+  
+  /* Style the button */
+  .centered-button {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-kerning: 3.5rem;
+    width: 50vw;
+    height: 3rem;    
+    font-size: 16px;
+    background-color: #5F7391;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-position 0.3s ease; /* Smooth transition for background position */
+  }
+  
+  /* Hover effect */
+  .centered-button:hover {
+    font-size: 17px; /* Increase font size on hover */
+
+  }
+
+/* Center the line horizontally */
+.line-container {
+    justify-content: center;
+  }
+  
+  /* Style the line */
+  .line {
+    width: 20%;
+    height: 3px; /* Adjust thickness as needed */
+    background-color: #242424; /* Change color as needed */
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between images */
+    align-items: center; /* Vertically align images */
+    margin: 20px 0; /* Add margin as needed */
+}
+
+.image-container img {
+    width: 18%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.containerlist {
+  display: flex;
+}
+
+.text-block {
+  flex: 1;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .text-block:nth-child(2) {
+      border-left: none; /* Remove border on small screens */
+      padding-top: 20px; /* Add space between blocks */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .containeredu {
+      flex-direction: column; /* Stack columns on top of each other */
+  }
+
+  .column1 {
+    padding-right: 45px;
+  }
+  .column1, .column2 {
+      width: 100%; /* Set full width for columns on small screens */
+      padding-left: 60px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+  }
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the videos horizontally */
+  background-color: #C1BFBB;
+}
+
+.video {
+  flex: 1;
+  margin: 10px; /* Optional: Adjust margin as needed */
+  transform: scale(0.6);
+
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the videos horizontally */
+  align-items: center;
+}
+
+.video {
+  flex: 1;
+  margin: 10px; /* Optional: Adjust margin as needed */
+}
+
+@media only screen and (max-width: 992px) {
+  .header__link {font-size: 12px;}
+  .header .container {display:flex;justify-content: center;}}
+
+  /* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .video-container {
+      flex-direction: column;
+  }
+
+  .video {
+    flex: 1;
+    margin: 10px; /* Optional: Adjust margin as needed */
+    transform: scale(0.5);
+    padding-bottom: 0px;
+  
+  }
+}
