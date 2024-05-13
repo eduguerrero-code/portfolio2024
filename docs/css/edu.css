@@ -201,6 +201,8 @@
     margin: 10px; /* Optional: Adjust margin as needed */
     transform: scale(0.5);
     padding-bottom: 0px;
-  
+  }
+   .iframe {
+    height: 60%;
   }
 }
