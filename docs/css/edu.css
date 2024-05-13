@@ -203,6 +203,7 @@
     padding-bottom: 0px;
   }
    .iframe {
-    height: 60%;
+     width: auto;
+    height: auto;
   }
 }
