@@ -60,11 +60,18 @@
 	      background: #0056b3;
 	    }
 
-		main {
-		  display: block;
-		  width: 100%;
-		  margin-top: 60px; /* add some spacing below the header */
-		}
+	.header-container {
+  		display: flex;
+  		justify-content: center;
+  		gap: 40px;
+  		padding: 20px;
+	}
+	main {
+  		clear: both;
+  		display: block;
+  		width: 100%;
+ 		 margin-top: 60px;
+	}
 	  </style>
 </head>
 <body>
@@ -72,7 +79,7 @@
 <!-- start header -->
 	<!-- start header -->
 	<header class="header">
-		<div class="container">
+		<div class="header-container">
 	
 			<a href="index.html" class="header__link">
 				HOME
