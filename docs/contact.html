@@ -12,115 +12,72 @@
 	
 
 	<link rel="stylesheet" href="css/style.min.css">
-
-	<title>Contact Us</title>
-	  <style>
-	
-	    .contact-form-wrapper {
-		  display: block;
-		  margin: 100px auto 40px;
-		  max-width: 600px;
-		  padding: 60px;
-		  background: white;
-		  border-radius: 32px;
-		  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-		}
-	    h2 {
-	      margin-bottom: 20px;
-	      color: #333;
-	    }
-	    label {
-	      display: block;
-	      margin: 15px 0 5px;
-	    }
-	    input[type="text"],
-	    input[type="email"],
-	    textarea {
-	      width: 100%;
-	      padding: 10px;
-	      border: 1px solid #ccc;
-	      border-radius: 6px;
-	      font-size: 16px;
-	    }
-	    textarea {
-	      resize: vertical;
-	      height: 120px;
-	    }
-	    button {
-	      margin-top: 20px;
-	      padding: 12px 20px;
-	      background: #007BFF;
-	      border: none;
-	      color: white;
-	      border-radius: 6px;
-	      font-size: 16px;
-	      cursor: pointer;
-	    }
-	    button:hover {
-	      background: #0056b3;
-	    }
-
-	.header-container {
-  		 max-width: 1200px;
-  		margin: 0 auto;
-  		display: flex;
-  		justify-content: center;
-  		gap: 40px;
-  		padding: 20px;
-	}
-	main {
-  		clear: both;
-  		display: block;
-  		width: 100%;
- 		 margin-top: 60px;
-	}
-		  .header {
-  		width: 100%;
-  		
-	}
-	  </style>
 </head>
 <body>
 
 <!-- start header -->
 	<!-- start header -->
 	<header class="header">
-		<div class="header-container">
+		<div class="container">
 	
 			<a href="index.html" class="header__link">
 				HOME
 			</a>
 	
-			<a href="about.html" class="header__link">
+			<a href="about.html" class="header__link active">
 				ABOUT
 			</a>
 	
-			<a href="" class="header__link active">
+			<a href="contact-me.html" class="header__link">
 				CONTACT
 			</a>
 	
 		</div>
 	</header>
-	
+	<!-- end header -->
 <!-- end header -->
 
-	<main>
-		<div class="contact-form-wrapper">
-		  <h2>I'd love to hear from you!:)</h2>
-		  <form action="https://formspree.io/f/mdkewqko" method="POST">
-		    <label for="name"> Name </label>
-		    <input type="text" id="name" name="name" required>
-		
-		    <label for="email">Email</label>
-		    <input type="email" id="email" name="_replyto" required>
-		
-		    <label for="subject">Subject</label>
-		    <input type="text" id="subject" name="subject">
-		
-		    <label for="message">Message</label>
-		    <textarea id="message" name="message" required></textarea>
-		
-		    <button type="submit">Send</button>
-		  </form>
+<body>
+
+<div class="about">
+	<div class="form">
+		<h2>Let’s Chat! ☕️</h2>
+		<h3 style="font-weight: 300;font-size: 1.2rem;">Have a question, idea, or just want to say hi? Fill in the form and I’ll get back to you soon.</h3>
+		<form action="https://formspree.io/f/mdkewqko" method="POST">
+			<label for="name" style="display: block; margin: 15px 0 5px;">Name</label>
+			<input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;">
+
+			<label for="email" style="display: block; margin: 15px 0 5px;">Email</label>
+			<input type="email" id="email" name="_replyto" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;">
+
+			<label for="subject" style="display: block; margin: 15px 0 5px;">Subject</label>
+			<input type="text" id="subject" name="subject" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;">
+
+			<label for="message" style="display: block; margin: 15px 0 5px;">Message</label>
+			<textarea id="message" name="message" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; resize: vertical; height: 120px;"></textarea>
+
+			<button type="submit" style="margin-top: 20px; padding: 12px 20px; background: #f89880; border: none; color: white; border-radius: 20px; font-size: 16px; cursor: pointer;">Send</button>
+		</form>
+	</div>"
+</div>
+</body>
+<!-- End Main Content -->
+
+<!-- start footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="copy">
+			©2025 Eduardo Guerrero Portfolio. All Rights Reserved.
 		</div>
- 	</main>
+	</div>
+</footer>
+<!-- end footer -->
+
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
